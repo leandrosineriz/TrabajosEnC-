@@ -1,0 +1,6 @@
+D:\Mis Documentos\Visual Studio 2012\Projects\ClaseUno\ClaseUno\bin\Debug\ClaseUno.exe.config
+D:\Mis Documentos\Visual Studio 2012\Projects\ClaseUno\ClaseUno\bin\Debug\ClaseUno.exe
+D:\Mis Documentos\Visual Studio 2012\Projects\ClaseUno\ClaseUno\bin\Debug\ClaseUno.pdb
+D:\Mis Documentos\Visual Studio 2012\Projects\ClaseUno\ClaseUno\obj\Debug\ClaseUno.csprojResolveAssemblyReference.cache
+D:\Mis Documentos\Visual Studio 2012\Projects\ClaseUno\ClaseUno\obj\Debug\ClaseUno.exe
+D:\Mis Documentos\Visual Studio 2012\Projects\ClaseUno\ClaseUno\obj\Debug\ClaseUno.pdb

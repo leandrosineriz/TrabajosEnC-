@@ -1,0 +1,5 @@
+D:\Mis Documentos\Visual Studio 2012\Projects\ClaseUno\ejercicioUno\bin\Debug\ejercicioUno.exe.config
+D:\Mis Documentos\Visual Studio 2012\Projects\ClaseUno\ejercicioUno\bin\Debug\ejercicioUno.exe
+D:\Mis Documentos\Visual Studio 2012\Projects\ClaseUno\ejercicioUno\bin\Debug\ejercicioUno.pdb
+D:\Mis Documentos\Visual Studio 2012\Projects\ClaseUno\ejercicioUno\obj\Debug\ejercicioUno.exe
+D:\Mis Documentos\Visual Studio 2012\Projects\ClaseUno\ejercicioUno\obj\Debug\ejercicioUno.pdb
