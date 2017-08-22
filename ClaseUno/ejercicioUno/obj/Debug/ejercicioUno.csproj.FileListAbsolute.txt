@@ -3,3 +3,10 @@ D:\Mis Documentos\Visual Studio 2012\Projects\ClaseUno\ejercicioUno\bin\Debug\ej
 D:\Mis Documentos\Visual Studio 2012\Projects\ClaseUno\ejercicioUno\bin\Debug\ejercicioUno.pdb
 D:\Mis Documentos\Visual Studio 2012\Projects\ClaseUno\ejercicioUno\obj\Debug\ejercicioUno.exe
 D:\Mis Documentos\Visual Studio 2012\Projects\ClaseUno\ejercicioUno\obj\Debug\ejercicioUno.pdb
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\ClaseUno\ejercicioUno\obj\Debug\ejercicioUno.csprojResolveAssemblyReference.cache
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\ClaseUno\ejercicioUno\obj\Debug\ejercicioUno.csproj.CoreCompileInputs.cache
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\ClaseUno\ejercicioUno\obj\Debug\ejercicioUno.exe
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\ClaseUno\ejercicioUno\obj\Debug\ejercicioUno.pdb
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\ClaseUno\ejercicioUno\bin\Debug\ejercicioUno.exe.config
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\ClaseUno\ejercicioUno\bin\Debug\ejercicioUno.exe
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\ClaseUno\ejercicioUno\bin\Debug\ejercicioUno.pdb

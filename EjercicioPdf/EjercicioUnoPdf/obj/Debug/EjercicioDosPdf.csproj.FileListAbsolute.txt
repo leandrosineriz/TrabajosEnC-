@@ -1,0 +1,7 @@
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\EjercicioPdf\EjercicioUnoPdf\bin\Debug\EjercicioUnoPdf.exe.config
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\EjercicioPdf\EjercicioUnoPdf\bin\Debug\EjercicioUnoPdf.exe
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\EjercicioPdf\EjercicioUnoPdf\bin\Debug\EjercicioUnoPdf.pdb
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\EjercicioPdf\EjercicioUnoPdf\obj\Debug\EjercicioDosPdf.csproj.CoreCompileInputs.cache
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\EjercicioPdf\EjercicioUnoPdf\obj\Debug\EjercicioUnoPdf.exe
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\EjercicioPdf\EjercicioUnoPdf\obj\Debug\EjercicioUnoPdf.pdb
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\EjercicioPdf\EjercicioUnoPdf\obj\Debug\EjercicioDosPdf.csprojResolveAssemblyReference.cache

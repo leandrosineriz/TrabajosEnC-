@@ -1,0 +1,6 @@
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\ClaseUno\ejercicioTresPdf\obj\Debug\ejercicioTresPdf.csproj.CoreCompileInputs.cache
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\ClaseUno\ejercicioTresPdf\bin\Debug\ejercicioTresPdf.exe.config
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\ClaseUno\ejercicioTresPdf\bin\Debug\ejercicioTresPdf.exe
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\ClaseUno\ejercicioTresPdf\bin\Debug\ejercicioTresPdf.pdb
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\ClaseUno\ejercicioTresPdf\obj\Debug\ejercicioTresPdf.exe
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\ClaseUno\ejercicioTresPdf\obj\Debug\ejercicioTresPdf.pdb

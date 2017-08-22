@@ -16,18 +16,20 @@ namespace ejercicioUno
             int num;
             int numeroMayor=0; //inicializamos las variables que comparamos.
             int numeroMenor=0;
-            int sumaNumeros;
-            int promedio;
-            int primerNumeroPar;
-            int ultimoNumeroImpar;
-            int cantidadDePares;
-            int lugarDelPrimerPar;
-            int lugarDelUltimoPar;
+            int sumaDeLosNumeros=0;
+            float promedio=0;
+            int primerNumeroPar=0;
+            bool primerNumeroParEncontrado=false;
+            int ultimoNumeroImpar=0;
+            int cantidadDePares=0;
+            int lugarDelPrimerPar=0;
+            int lugarDelUltimoImpar=0;
+            int contador = 0;
 
             //int i; (que es i??)
             //bool flag =true; (tiro a las flags) 
 
-            for (int contador = 0; contador < 5; contador++)
+            for ( contador = 1; contador <= 7; contador++)
             {
                 Console.WriteLine("Ingrese un numero: ");
                 while (!int.TryParse(Console.ReadLine(), out num))
@@ -35,7 +37,7 @@ namespace ejercicioUno
                     Console.WriteLine("Error, Ingrese un numero: ");
 
                 }
-                if (contador == 0)
+                if (contador == 1)
                 {
                     numeroMayor = num;
                     numeroMenor = num;
@@ -49,10 +51,38 @@ namespace ejercicioUno
                     numeroMenor = num;
                 }
 
+                sumaDeLosNumeros += num;
+
+                if(num%2==0 && primerNumeroParEncontrado==false)
+                {
+                    primerNumeroPar = num;
+                    primerNumeroParEncontrado = true;
+                    lugarDelPrimerPar = contador;
+                }
+
+                if(num%2!=0)
+                {
+                    ultimoNumeroImpar = num;
+                    lugarDelUltimoImpar = contador;
+                }
+
+                if(num%2==0)
+                {
+                    cantidadDePares++;
+                }
+
+
+
 
             }
 
+            promedio = (float)sumaDeLosNumeros / contador;
+
+
             Console.WriteLine("El mayor es: " + numeroMayor + " y el menor es: " + numeroMenor);
+            Console.WriteLine("La suma de los numeros es:" + sumaDeLosNumeros + " y su promedio es:" + promedio);
+            Console.WriteLine("El primer numero par es:" + primerNumeroPar + " ,la posicion del primer par es:" + lugarDelPrimerPar + " y la cantidad de pares es:" + cantidadDePares);
+            Console.WriteLine("El ultimo numero impar es:" + ultimoNumeroImpar + ",la posicion del ultimo impar es:" + lugarDelUltimoImpar);
             Console.Read();
         }
     }

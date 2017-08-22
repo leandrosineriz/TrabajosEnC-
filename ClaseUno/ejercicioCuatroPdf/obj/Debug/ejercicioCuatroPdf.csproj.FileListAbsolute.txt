@@ -1,0 +1,6 @@
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\ClaseUno\ejercicioCuatroPdf\bin\Debug\ejercicioCuatroPdf.exe.config
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\ClaseUno\ejercicioCuatroPdf\bin\Debug\ejercicioCuatroPdf.exe
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\ClaseUno\ejercicioCuatroPdf\bin\Debug\ejercicioCuatroPdf.pdb
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\ClaseUno\ejercicioCuatroPdf\obj\Debug\ejercicioCuatroPdf.csproj.CoreCompileInputs.cache
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\ClaseUno\ejercicioCuatroPdf\obj\Debug\ejercicioCuatroPdf.exe
+C:\Users\Leo\Desktop\Proyectos\TrabajosEnCSHARP\ClaseUno\ejercicioCuatroPdf\obj\Debug\ejercicioCuatroPdf.pdb
