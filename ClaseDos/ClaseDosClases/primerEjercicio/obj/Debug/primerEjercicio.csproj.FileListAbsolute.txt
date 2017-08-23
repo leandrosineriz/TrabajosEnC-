@@ -1,0 +1,6 @@
+C:\Users\alumno\Desktop\repo\ClaseDos\ClaseDosClases\primerEjercicio\bin\Debug\primerEjercicio.exe.config
+C:\Users\alumno\Desktop\repo\ClaseDos\ClaseDosClases\primerEjercicio\bin\Debug\primerEjercicio.exe
+C:\Users\alumno\Desktop\repo\ClaseDos\ClaseDosClases\primerEjercicio\bin\Debug\primerEjercicio.pdb
+C:\Users\alumno\Desktop\repo\ClaseDos\ClaseDosClases\primerEjercicio\obj\Debug\primerEjercicio.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Desktop\repo\ClaseDos\ClaseDosClases\primerEjercicio\obj\Debug\primerEjercicio.exe
+C:\Users\alumno\Desktop\repo\ClaseDos\ClaseDosClases\primerEjercicio\obj\Debug\primerEjercicio.pdb

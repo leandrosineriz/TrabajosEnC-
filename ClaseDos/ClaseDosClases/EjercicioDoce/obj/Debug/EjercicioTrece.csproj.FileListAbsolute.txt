@@ -1,0 +1,5 @@
+C:\Users\alumno\Desktop\repo\ClaseDos\ClaseDosClases\EjercicioDoce\bin\Debug\EjercicioDoce.exe.config
+C:\Users\alumno\Desktop\repo\ClaseDos\ClaseDosClases\EjercicioDoce\bin\Debug\EjercicioDoce.exe
+C:\Users\alumno\Desktop\repo\ClaseDos\ClaseDosClases\EjercicioDoce\bin\Debug\EjercicioDoce.pdb
+C:\Users\alumno\Desktop\repo\ClaseDos\ClaseDosClases\EjercicioDoce\obj\Debug\EjercicioDoce.exe
+C:\Users\alumno\Desktop\repo\ClaseDos\ClaseDosClases\EjercicioDoce\obj\Debug\EjercicioDoce.pdb
