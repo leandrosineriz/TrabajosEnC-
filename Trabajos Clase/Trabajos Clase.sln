@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaseTres", "ClaseTres\Clas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaseCuatro", "ClaseCuatro\ClaseCuatro\ClaseCuatro.csproj", "{038BC2CF-802F-4E7E-97B9-D07284E7B985}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades.Clases.ClaseCinco", "ClaseCinco\Entidades.Clases\Entidades.Clases\Entidades.Clases.ClaseCinco.csproj", "{64C4E999-B77E-4A69-8457-416EE8920403}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppPruebaLibrerias.ClaseCinco", "ClaseCinco\Entidades.Clases\AppPruebaLibrerias\AppPruebaLibrerias.ClaseCinco.csproj", "{101CE6FC-CFDD-47BF-8E21-4E0F4EAA17AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{038BC2CF-802F-4E7E-97B9-D07284E7B985}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{038BC2CF-802F-4E7E-97B9-D07284E7B985}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{038BC2CF-802F-4E7E-97B9-D07284E7B985}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64C4E999-B77E-4A69-8457-416EE8920403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64C4E999-B77E-4A69-8457-416EE8920403}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64C4E999-B77E-4A69-8457-416EE8920403}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64C4E999-B77E-4A69-8457-416EE8920403}.Release|Any CPU.Build.0 = Release|Any CPU
+		{101CE6FC-CFDD-47BF-8E21-4E0F4EAA17AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{101CE6FC-CFDD-47BF-8E21-4E0F4EAA17AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{101CE6FC-CFDD-47BF-8E21-4E0F4EAA17AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{101CE6FC-CFDD-47BF-8E21-4E0F4EAA17AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
