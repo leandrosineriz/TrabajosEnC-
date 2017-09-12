@@ -35,16 +35,61 @@ namespace ClaseSeisLibreriaa
         private string Mostrar()
         {
             string retorno = "Cantidad de Colores: " +
-                this._cantMaximaColores + "\nColores: \n";
+                this._cantMaximaColores + "   \nColores: \n";
 
-            foreach (Tempera i in this._colores)
+            for (int i = 0; i < this._cantMaximaColores;i++)
             {
-                retorno += Tempera.Mostrar(this._colores[i]);
-                retorno += "\n";
+                if (this._colores.GetValue(i) != null)
+                {
+                    retorno += Tempera.Mostrar(this._colores[i]);
+                    retorno += "\n";
+                }
+                
             }
 
             return retorno;
         }
+
+        private static int ObtenerIndiceDisponibleEnArray(Paleta unaPaleta)
+        {
+            int retorno = -1;
+
+            for (int i = 0; i < unaPaleta._cantMaximaColores; i++)
+            {
+                if (unaPaleta._colores.GetValue(i) == null)
+                {
+                    retorno = i;
+                    break;
+                }
+            }
+
+            return retorno;
+
+
+        }
+
+        private static int ObtenerIndiceDisponibleEnArray(Paleta unaPaleta, Tempera unaTempera)
+        {
+            int retorno = -1;
+
+
+            for (int i = 0; i < unaPaleta._cantMaximaColores; i++)
+            {
+                if (unaPaleta._colores.GetValue(i) != null)
+                {
+                    if (unaPaleta._colores[i] == unaTempera)
+                    {
+                        retorno = i;
+                        break;
+                    }
+
+                }
+            }
+
+            return retorno;
+
+        }
+          
 
         /// <summary>
         /// SOBRECARGAS
@@ -75,12 +120,15 @@ namespace ClaseSeisLibreriaa
         {
             bool banderaTemperaEnPaleta = false;
 
-            foreach (Tempera i in unaPaleta._colores)
+            for (int i = 0; i < unaPaleta._cantMaximaColores;i++)
             {
-                if (unaPaleta._colores[i] == unaTempera)
+                if (unaPaleta._colores.GetValue(i) != null)
                 {
-                    banderaTemperaEnPaleta = true;
-                    break;
+                    if (unaPaleta._colores[i] == unaTempera)
+                    {
+                        banderaTemperaEnPaleta = true;
+                        break;
+                    }
                 }
             }
 
@@ -95,78 +143,92 @@ namespace ClaseSeisLibreriaa
 
         public static Paleta operator +(Paleta unaPaleta, Tempera unaTempera)
         {
-            if (unaPaleta != unaTempera)
-            {
-                foreach (Tempera i in unaPaleta._colores)
-                {
-                    if (unaPaleta._colores[i] == null)
-                    {
-                        unaPaleta._colores[i] = unaTempera;
-                        break;
-                    }
-                }
-            }
+            int auxDisponible;
+         
+            auxDisponible=Paleta.ObtenerIndiceDisponibleEnArray(unaPaleta, unaTempera);
 
+            if (auxDisponible != -1)
+            {
+                unaPaleta._colores[auxDisponible] += unaTempera;
+            }
+             else
+            {
+                auxDisponible = Paleta.ObtenerIndiceDisponibleEnArray(unaPaleta);
+
+              if (auxDisponible != -1)
+              {
+                unaPaleta._colores[auxDisponible] = unaTempera;
+              }
+
+            }                                        
+            
+            
             return unaPaleta;
         }
 
+            
+        
+
         public static Paleta operator -(Paleta unaPaleta, Tempera unaTempera)
         {
-            if (unaPaleta == unaTempera)
-            {
-                foreach (Tempera i in unaPaleta._colores)
-                {
-                    if (unaPaleta._colores[i] == unaTempera)
-                    {
-                        unaPaleta._colores[i] = null;
-                        break;
-                    }
-                }
-            }
+            int auxDisponible;
+         
+            auxDisponible=Paleta.ObtenerIndiceDisponibleEnArray(unaPaleta, unaTempera);
 
+            if (auxDisponible != -1)
+            {
+                unaPaleta._colores[auxDisponible] = null;
+            }
+            
+            
             return unaPaleta;
         }
 
         public static Paleta operator +(Paleta unaPaleta, Paleta otraPaleta)
         {
-            int contadorUnaPaleta = 0;
+            /*int contadorUnaPaleta = 0;
             int contadorOtraPaleta = 0;
+            */
             int auxCantMax = 0;
 
-
-            foreach (Tempera i in unaPaleta._colores)
+            /*
+            for (int i=0; i < unaPaleta._cantMaximaColores;i++)
             {
-                if (unaPaleta._colores[i] != null)
+                if (unaPaleta._colores.GetValue(i) != null)
                 {
                     contadorUnaPaleta++;
                 }
             }
 
-            foreach (Tempera i in unaPaleta._colores)
+            for (int i = 0; i < unaPaleta._cantMaximaColores; i++)
             {
-                if (unaPaleta._colores[i] != null)
+                if (otraPaleta._colores.GetValue(i) != null)
                 {
                     contadorOtraPaleta++;
                 }
             }
+            */
 
-            auxCantMax = contadorUnaPaleta + contadorOtraPaleta;
+            auxCantMax = unaPaleta._cantMaximaColores + otraPaleta._cantMaximaColores;
 
             Paleta retornoPaleta = auxCantMax;
 
-            foreach (Tempera i in unaPaleta._colores)
-            {
-                retornoPaleta = retornoPaleta + unaPaleta._colores[i];
-            }
+            unaPaleta._colores.CopyTo(retornoPaleta._colores, 0);
+            otraPaleta._colores.CopyTo(retornoPaleta._colores, unaPaleta._cantMaximaColores);
 
-            foreach (Tempera i in otraPaleta._colores)
-            {
-                retornoPaleta = retornoPaleta + otraPaleta._colores[i];
-            }
 
             return retornoPaleta;
 
         }
+
+
+        public void setValueColores(int indice,Tempera unaTempera)
+        {
+            this._colores[indice] = unaTempera;
+ 
+        }
     }
+
+
 
 }

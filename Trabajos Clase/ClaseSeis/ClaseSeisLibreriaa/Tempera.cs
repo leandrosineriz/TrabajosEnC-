@@ -102,10 +102,84 @@ namespace ClaseSeisLibreriaa
 
         }
 
+        public static Tempera operator +(Tempera unaTempera, Tempera otraTempera)
+        {
+            double auxCantTempera;
+
+            if (otraTempera._cantidad> 0)
+            {
+                auxCantTempera = unaTempera._cantidad + otraTempera._cantidad;
+
+                if (auxCantTempera <= 100)
+                {
+                    unaTempera._cantidad += otraTempera._cantidad;
+                }
+
+
+            }
+
+
+            return unaTempera;
+
+        }
+
+
+
+        public static Tempera operator -(Tempera unaTempera, double incrementoCant)
+        {
+            double auxCantTempera;
+
+            if (incrementoCant > 0)
+            {
+                auxCantTempera = unaTempera._cantidad - incrementoCant;
+
+                if (auxCantTempera >= 0)
+                {
+                    unaTempera._cantidad -= (int)incrementoCant;
+                }
+
+
+            }
+
+
+            return unaTempera;
+
+        }
+
+        public static Tempera operator -(Tempera unaTempera, Tempera otraTempera)
+        {
+            double auxCantTempera;
+
+            if (otraTempera._cantidad > 0)
+            {
+                auxCantTempera = unaTempera._cantidad - otraTempera._cantidad;
+
+                if (auxCantTempera >= 0)
+                {
+                    unaTempera._cantidad -= otraTempera._cantidad;
+                }
+
+
+            }
+
+
+            return unaTempera;
+
+        }
+
+
         public static implicit operator int(Tempera unaTempera)
         {
             return unaTempera._cantidad;
 
+        }
+
+        ///Getters
+        ///
+
+        public int getValueCantidad()
+        {
+            return this._cantidad;
         }
     }
 }

@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.8
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main", "Main\Main.csproj", "{36EF2310-EA9B-4DC8-9BA9-8DC5F52B049B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaseUno", "ClaseUno\ClaseUno.csproj", "{3616B8DE-2272-4997-9977-90A784BF43B7}"
@@ -17,9 +15,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades.Clases.ClaseCinco
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppPruebaLibrerias.ClaseCinco", "ClaseCinco\Entidades.Clases\AppPruebaLibrerias\AppPruebaLibrerias.ClaseCinco.csproj", "{101CE6FC-CFDD-47BF-8E21-4E0F4EAA17AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaseSeis", "ClaseSeis\ClaseSeis\ClaseSeis.csproj", "{09A9918D-F516-4753-943F-A3868C4255BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaWindowsForm", "ClaseSiete\PruebaWindowsForm\PruebaWindowsForm.csproj", "{CCE2E479-511C-4D6F-8EED-1A9E287294DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPaletaWindowsForm", "ClaseSiete\TestPaletaWindowsForm\TestPaletaWindowsForm.csproj", "{8AE9EA3E-6676-4A48-8535-D9BEEC7D1250}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaseSeisLibreriaa", "ClaseSeis\ClaseSeisLibreriaa\ClaseSeisLibreriaa.csproj", "{787AC469-E779-421F-A708-7488AAC8F9B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaseSeis", "ClaseSeis\ClaseSeis\ClaseSeis.csproj", "{09A9918D-F516-4753-943F-A3868C4255BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,14 +57,22 @@ Global
 		{101CE6FC-CFDD-47BF-8E21-4E0F4EAA17AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{101CE6FC-CFDD-47BF-8E21-4E0F4EAA17AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{101CE6FC-CFDD-47BF-8E21-4E0F4EAA17AB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{09A9918D-F516-4753-943F-A3868C4255BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{09A9918D-F516-4753-943F-A3868C4255BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{09A9918D-F516-4753-943F-A3868C4255BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{09A9918D-F516-4753-943F-A3868C4255BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCE2E479-511C-4D6F-8EED-1A9E287294DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCE2E479-511C-4D6F-8EED-1A9E287294DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCE2E479-511C-4D6F-8EED-1A9E287294DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCE2E479-511C-4D6F-8EED-1A9E287294DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AE9EA3E-6676-4A48-8535-D9BEEC7D1250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AE9EA3E-6676-4A48-8535-D9BEEC7D1250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AE9EA3E-6676-4A48-8535-D9BEEC7D1250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AE9EA3E-6676-4A48-8535-D9BEEC7D1250}.Release|Any CPU.Build.0 = Release|Any CPU
 		{787AC469-E779-421F-A708-7488AAC8F9B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{787AC469-E779-421F-A708-7488AAC8F9B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{787AC469-E779-421F-A708-7488AAC8F9B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{787AC469-E779-421F-A708-7488AAC8F9B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09A9918D-F516-4753-943F-A3868C4255BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09A9918D-F516-4753-943F-A3868C4255BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09A9918D-F516-4753-943F-A3868C4255BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09A9918D-F516-4753-943F-A3868C4255BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
