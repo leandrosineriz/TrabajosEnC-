@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enumerados.cs" />
     <Compile Include="FrmPaleta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +88,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\ClaseOcho.ClasesGenericas\ClaseOcho.ClasesGenericas.csproj">
+      <Project>{e30564cc-6ea2-45b1-ad78-4a28c3999eb8}</Project>
+      <Name>ClaseOcho.ClasesGenericas</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\ClaseSeis\ClaseSeisLibreriaa\ClaseSeisLibreriaa.csproj">
       <Project>{787ac469-e779-421f-a708-7488aac8f9b7}</Project>
       <Name>ClaseSeisLibreriaa</Name>

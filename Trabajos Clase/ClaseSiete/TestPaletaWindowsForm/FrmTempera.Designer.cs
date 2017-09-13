@@ -31,11 +31,11 @@
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.txtMarca = new System.Windows.Forms.TextBox();
-            this.txtColor = new System.Windows.Forms.TextBox();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.lblMarca = new System.Windows.Forms.Label();
             this.lblColor = new System.Windows.Forms.Label();
             this.lblCantidad = new System.Windows.Forms.Label();
+            this.cboColores = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnAceptar
@@ -65,14 +65,6 @@
             this.txtMarca.Size = new System.Drawing.Size(100, 20);
             this.txtMarca.TabIndex = 2;
             this.txtMarca.TextChanged += new System.EventHandler(this.txtMarca_TextChanged);
-            // 
-            // txtColor
-            // 
-            this.txtColor.Location = new System.Drawing.Point(24, 89);
-            this.txtColor.Name = "txtColor";
-            this.txtColor.Size = new System.Drawing.Size(100, 20);
-            this.txtColor.TabIndex = 3;
-            this.txtColor.TextChanged += new System.EventHandler(this.txtColor_TextChanged);
             // 
             // txtCantidad
             // 
@@ -109,16 +101,25 @@
             this.lblCantidad.TabIndex = 7;
             this.lblCantidad.Text = "Cantidad:";
             // 
+            // cboColores
+            // 
+            this.cboColores.FormattingEnabled = true;
+            this.cboColores.Location = new System.Drawing.Point(24, 89);
+            this.cboColores.Name = "cboColores";
+            this.cboColores.Size = new System.Drawing.Size(100, 21);
+            this.cboColores.TabIndex = 8;
+            this.cboColores.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // FrmTempera
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(292, 273);
+            this.Controls.Add(this.cboColores);
             this.Controls.Add(this.lblCantidad);
             this.Controls.Add(this.lblColor);
             this.Controls.Add(this.lblMarca);
             this.Controls.Add(this.txtCantidad);
-            this.Controls.Add(this.txtColor);
             this.Controls.Add(this.txtMarca);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
@@ -134,10 +135,10 @@
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.TextBox txtMarca;
-        private System.Windows.Forms.TextBox txtColor;
         private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Label lblMarca;
         private System.Windows.Forms.Label lblColor;
         private System.Windows.Forms.Label lblCantidad;
+        private System.Windows.Forms.ComboBox cboColores;
     }
 }
