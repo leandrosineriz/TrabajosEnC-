@@ -8,7 +8,16 @@ namespace ClaseOcho.ClasesGenericas
 {
     public class Paleta
     {
+        
         private List <Tempera> _colores;
+        ///Propiedades
+        ///      
+
+        public List <Tempera> Colores
+        {
+            get { return _colores; }
+            //set { _colores = value; }
+        }
         
 
         /// <summary>
@@ -30,24 +39,23 @@ namespace ClaseOcho.ClasesGenericas
         /// </summary>
         /// <returns></returns>
         /// 
+
+
+
         private string Mostrar()
         {
-            string retorno = "";
+            string retorno="";
 
             foreach(Tempera item in this._colores)
             {  
-                retorno += Tempera.Mostrar(item);
-                retorno += "\n";        
+                retorno += Tempera.Mostrar(item);        
             }
 
             return retorno;
         }
 
           
-        public List <Tempera> getTemperas()
-        {
-            return this._colores;
-        }
+        
 
         /// <summary>
         /// SOBRECARGAS
@@ -61,6 +69,32 @@ namespace ClaseOcho.ClasesGenericas
 
         }
 
+        /// <summary>
+        /// Devuelve o setea una tempera del array de temperas por indice
+        /// </summary>
+        /// <param name="indice"></param>
+        /// <returns></returns>
+        public Tempera this[int indice]
+        {
+            get
+            {
+                if (indice > 0 || indice < this._colores.Count)
+                 return this._colores[indice];
+                else
+                 return null;
+            }
+            set 
+            {
+                if (indice > 0 || indice < this._colores.Count)
+                    this._colores[indice] = value;
+                else if (indice == this._colores.Count)
+                {
+                    Paleta auxPaleta=this + value;
+                    this._colores = auxPaleta._colores;
+                }              
+
+            }
+        }
 
         /// <summary>
         /// SOBRECARGAS EXTRAS CASA
@@ -159,11 +193,7 @@ namespace ClaseOcho.ClasesGenericas
         }
 
 
-        public void setValueColores(int indice,Tempera unaTempera)
-        {
-            this._colores[indice] = unaTempera;
- 
-        }
+        
     }
 
 

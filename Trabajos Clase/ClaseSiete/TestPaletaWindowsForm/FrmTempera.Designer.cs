@@ -125,6 +125,7 @@
             this.Controls.Add(this.btnAceptar);
             this.Name = "FrmTempera";
             this.Text = "FrmTempera";
+            this.Load += new System.EventHandler(this.FrmTempera_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

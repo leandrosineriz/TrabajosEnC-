@@ -38,14 +38,20 @@ namespace TestPaletaWindowsForm
             frm.ShowDialog();
 
             if (frm.DialogResult == DialogResult.OK)
-                this._paleta += frm.getTempera();
+                this._paleta[0] = frm.getTempera();
 
             listBox2.Items.Clear();
 
-            foreach (Tempera i in _paleta.getTemperas())
+            /*foreach (Tempera i in _paleta.Colores)
             {
                 listBox2.Items.Add(Tempera.Mostrar(i));
+            }*/
+            for (int i = 0; i < this._paleta.Colores.Count; i++)
+            {
+                listBox2.Items.Add(Tempera.Mostrar(this._paleta[i]));
+
             }
+
             
             
         }
@@ -57,8 +63,29 @@ namespace TestPaletaWindowsForm
 
         private void btnMenos_Click(object sender, EventArgs e)
         {
-            FrmTempera frm = new FrmTempera(this._paleta.getTemperas()[listBox2.SelectedIndex]);
-            frm.ShowDialog();
+            if (this.listBox2.SelectedIndex != -1)
+            {
+                FrmTempera frm = new FrmTempera(this._paleta[listBox2.SelectedIndex]);
+               frm.ShowDialog();
+               if (frm.DialogResult == DialogResult.OK)
+                this._paleta -= frm.getTempera();
+
+               listBox2.Items.Clear();
+
+               /*foreach (Tempera i in this._paleta.Colores)
+               {
+                listBox2.Items.Add(Tempera.Mostrar(i));
+               }*/
+               for (int i = 0; i < this._paleta.Colores.Count;i++)
+               {
+                   listBox2.Items.Add(Tempera.Mostrar(this._paleta[i]));
+
+               }
+               
+                
+ 
+            }
+            
             
         }
 
@@ -66,12 +93,6 @@ namespace TestPaletaWindowsForm
         {
 
         }
-
-       
-
-
-
-
         
     }
 }

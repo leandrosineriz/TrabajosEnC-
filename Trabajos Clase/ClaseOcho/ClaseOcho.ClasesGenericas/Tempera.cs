@@ -12,6 +12,35 @@ namespace ClaseOcho.ClasesGenericas
         private string _marca;
         private int _cantidad;
 
+        ///Propiedades
+        ///
+
+        
+
+        public string Marca
+        {
+            get { return _marca; }
+            //set { _marca = value; }
+        }
+        
+       
+
+        public ConsoleColor Color
+        {
+            get { return _color; }
+            //set { _color = value; }
+        }
+
+        
+
+        public int Cantidad
+        {
+            get { return _cantidad; }
+            //set { _cantidad = value; }
+        }
+        
+        
+        
 
         /// <summary>
         /// Constructores
@@ -177,19 +206,6 @@ namespace ClaseOcho.ClasesGenericas
         ///Getters
         ///
 
-        public int getCantidad()
-        {
-            return this._cantidad;
-        }
-
-        public string getMarca()
-        {
-            return this._marca;
-        }
-
-        public ConsoleColor getColor()
-        {
-            return this._color;
-        }
+        
     }
 }

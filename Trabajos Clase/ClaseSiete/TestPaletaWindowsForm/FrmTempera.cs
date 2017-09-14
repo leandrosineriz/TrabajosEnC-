@@ -13,7 +13,7 @@ namespace TestPaletaWindowsForm
 {
     public partial class FrmTempera : Form
     {
-        private Tempera _tempera;
+        
 
         public FrmTempera()
         {
@@ -32,9 +32,12 @@ namespace TestPaletaWindowsForm
 
         public FrmTempera(Tempera unaTempera):this()
         {
-            this.txtMarca.Text = unaTempera.getMarca();
-            this.txtCantidad.Text =unaTempera.getCantidad().ToString();
-            this.cboColores.SelectedItem = unaTempera.getColor();
+            this.txtMarca.Text = unaTempera.Marca;
+            this.txtMarca.ReadOnly = true;
+            this.txtCantidad.Text =unaTempera.Cantidad.ToString();
+            this.txtCantidad.ReadOnly = true;
+            this.cboColores.SelectedItem = unaTempera.Color;
+            this.cboColores.Enabled = false; 
  
         }
 
@@ -47,12 +50,21 @@ namespace TestPaletaWindowsForm
 
             this.DialogResult = System.Windows.Forms.DialogResult.OK;
             */
+      
             string auxMarca = this.txtMarca.Text;
             int auxCantidad = int.Parse(this.txtCantidad.Text);
             _tempera = new Tempera((ConsoleColor)this.cboColores.SelectedItem, auxMarca, auxCantidad);
 
             this.DialogResult = DialogResult.OK;
 
+        }
+
+        private Tempera _tempera;
+
+        public Tempera Tempera
+        {
+            get { return _tempera; }
+            
         }
 
         public Tempera getTempera()
@@ -62,6 +74,7 @@ namespace TestPaletaWindowsForm
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            this.DialogResult = DialogResult.Cancel;
 
         }
 
@@ -77,6 +90,11 @@ namespace TestPaletaWindowsForm
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmTempera_Load(object sender, EventArgs e)
         {
 
         }
