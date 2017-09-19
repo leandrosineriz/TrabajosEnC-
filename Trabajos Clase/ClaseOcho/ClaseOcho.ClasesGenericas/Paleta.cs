@@ -85,7 +85,7 @@ namespace ClaseOcho.ClasesGenericas
             }
             set 
             {
-                if (indice > 0 || indice < this._colores.Count)
+                if (indice >= 0 && indice < this._colores.Count)
                     this._colores[indice] = value;
                 else if (indice == this._colores.Count)
                 {
@@ -192,6 +192,50 @@ namespace ClaseOcho.ClasesGenericas
             return retornoPaleta;
         }
 
+        ///sorts Paleta
+        ///
+
+        public static int ordenarPaletaPorMarca(Tempera unaTempera,Tempera otraTempera)
+        {
+            int retorno=0;
+
+            if (string.Compare(unaTempera.Marca, otraTempera.Marca) == 1)
+            {
+                retorno = 1;
+            }
+            else if (string.Compare(unaTempera.Marca, otraTempera.Marca) == 0)
+            {
+                retorno = 0;
+            }
+            else
+            {
+                retorno = -1;
+            }
+
+            return retorno;
+
+        }
+
+        public static int ordenarPaletaPorColor(Tempera unaTempera, Tempera otraTempera)
+        {
+            int retorno = 0;
+
+            if (string.Compare(unaTempera.Color.ToString(), otraTempera.Color.ToString()) == 1)
+            {
+                retorno = 1;
+            }
+            else if (string.Compare(unaTempera.Color.ToString(), otraTempera.Color.ToString()) == 0)
+            {
+                retorno = 0;
+            }
+            else
+            {
+                retorno = -1;
+            }
+
+            return retorno;
+
+        }
 
         
     }

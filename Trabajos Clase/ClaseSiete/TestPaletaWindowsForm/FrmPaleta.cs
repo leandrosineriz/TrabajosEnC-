@@ -20,6 +20,8 @@ namespace TestPaletaWindowsForm
         {
             InitializeComponent();
             this._paleta = new Paleta();
+            this.cmbOrdenar.Items.Add("Ordenar por Marca");
+            this.cmbOrdenar.Items.Add("Ordenar por Color");
         }
 
         private void FrmPaleta_Load(object sender, EventArgs e)
@@ -38,7 +40,7 @@ namespace TestPaletaWindowsForm
             frm.ShowDialog();
 
             if (frm.DialogResult == DialogResult.OK)
-                this._paleta[0] = frm.getTempera();
+                this._paleta[this._paleta.Colores.Count] = frm.getTempera();
 
             listBox2.Items.Clear();
 
@@ -92,6 +94,31 @@ namespace TestPaletaWindowsForm
         private void FrmPaleta_Load_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void cmbOrdenar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (this.cmbOrdenar.SelectedIndex)
+            {
+                case 0:
+                    this._paleta.Colores.Sort(Paleta.ordenarPaletaPorMarca);
+                    this.listBox2.Items.Clear();
+                    for (int i = 0; i < this._paleta.Colores.Count; i++)
+                    {
+                        this.listBox2.Items.Add(Tempera.Mostrar(this._paleta[i]));
+
+                    }
+                    break;
+                case 1:
+                    this._paleta.Colores.Sort(Paleta.ordenarPaletaPorColor);
+                    this.listBox2.Items.Clear();
+                    for (int i = 0; i < this._paleta.Colores.Count; i++)
+                    {
+                        this.listBox2.Items.Add(Tempera.Mostrar(this._paleta[i]));
+
+                    }
+                    break;
+            }
         }
         
     }

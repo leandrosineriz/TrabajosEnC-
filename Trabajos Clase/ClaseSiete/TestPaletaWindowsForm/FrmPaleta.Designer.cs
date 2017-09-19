@@ -31,11 +31,12 @@
             this.btnMas = new System.Windows.Forms.Button();
             this.btnMenos = new System.Windows.Forms.Button();
             this.listBox2 = new System.Windows.Forms.ListBox();
+            this.cmbOrdenar = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnMas
             // 
-            this.btnMas.Location = new System.Drawing.Point(12, 31);
+            this.btnMas.Location = new System.Drawing.Point(12, 51);
             this.btnMas.Name = "btnMas";
             this.btnMas.Size = new System.Drawing.Size(75, 23);
             this.btnMas.TabIndex = 0;
@@ -45,7 +46,7 @@
             // 
             // btnMenos
             // 
-            this.btnMenos.Location = new System.Drawing.Point(244, 31);
+            this.btnMenos.Location = new System.Drawing.Point(243, 51);
             this.btnMenos.Name = "btnMenos";
             this.btnMenos.Size = new System.Drawing.Size(75, 23);
             this.btnMenos.TabIndex = 1;
@@ -61,9 +62,19 @@
             this.listBox2.Size = new System.Drawing.Size(355, 95);
             this.listBox2.TabIndex = 2;
             // 
+            // cmbOrdenar
+            // 
+            this.cmbOrdenar.FormattingEnabled = true;
+            this.cmbOrdenar.Location = new System.Drawing.Point(12, 12);
+            this.cmbOrdenar.Name = "cmbOrdenar";
+            this.cmbOrdenar.Size = new System.Drawing.Size(121, 21);
+            this.cmbOrdenar.TabIndex = 3;
+            this.cmbOrdenar.SelectedIndexChanged += new System.EventHandler(this.cmbOrdenar_SelectedIndexChanged);
+            // 
             // FrmPaleta
             // 
             this.ClientSize = new System.Drawing.Size(367, 277);
+            this.Controls.Add(this.cmbOrdenar);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.btnMenos);
             this.Controls.Add(this.btnMas);
@@ -81,6 +92,7 @@
         private System.Windows.Forms.Button btnMas;
         private System.Windows.Forms.Button btnMenos;
         private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ComboBox cmbOrdenar;
     }
 }
 
