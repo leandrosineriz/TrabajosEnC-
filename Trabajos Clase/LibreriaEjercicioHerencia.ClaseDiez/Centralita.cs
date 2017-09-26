@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibreriaEjercicioHerencia.ClaseDiez
 {
-    class Centralita
+    public class Centralita
     {
         private List<Llamada> _listaDeLlamadas;
         protected string _razonSocial;
@@ -95,6 +95,77 @@ namespace LibreriaEjercicioHerencia.ClaseDiez
  
         }
 
+        public string Mostrar()
+        {
+            string retorno = "";
 
+            retorno += "Razon Social: " + this._razonSocial + "\nGanancia Total: " + this.GananciaTotal + "\nGanacia por llamadas Locales: " + this.GananciaPorLocal + "\nGanancia por llamadas Provinciales: " + this.GananciaPorProvincial+"\nLista Llamadas:\n";
+
+            foreach (Llamada i in this._listaDeLlamadas)
+            {
+                retorno += i.ToString();
+            }
+
+
+            return retorno;
+
+        }
+
+        private void AgregarLlamada(Llamada unaLlamada)
+        {
+            this._listaDeLlamadas.Add(unaLlamada);
+        }
+
+
+        public static bool operator ==(Centralita miCentralita, Llamada unaLlamada)
+        {
+            bool retorno = false;
+
+            foreach(Llamada i in miCentralita._listaDeLlamadas)
+            {
+                if (i == unaLlamada)
+                {
+                    retorno = true;
+                    break;
+                }              
+
+            }           
+
+            return retorno;
+        }
+
+        public static bool operator !=(Centralita miCentralita, Llamada unaLlamada)
+        {
+            return !(miCentralita == unaLlamada);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
+
+        public static Centralita operator +(Centralita miCentralita, Llamada unaLlamada)
+        {                        
+            Centralita auxCentralita=new Centralita();
+
+            auxCentralita._listaDeLlamadas = miCentralita._listaDeLlamadas;
+
+            if (!(miCentralita == unaLlamada))
+            {
+                auxCentralita.AgregarLlamada(unaLlamada);
+            }
+
+            return auxCentralita;
+        }
     }
 }

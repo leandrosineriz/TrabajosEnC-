@@ -25,14 +25,29 @@ namespace LibreriaEjercicioHerencia.ClaseDiez
 
         }
 
-        public new string Mostrar()
+        protected override string Mostrar()
         {
             return "Duracion: " + base.Duracion + "\nNumero Origen: " + base.NroOrigen + "\nNumero Destino: " + base.NroDestino + "\nCosto Llamada: "+ this.CostoLlamada;
+        }
+
+        public override string ToString()
+        {
+            return this.Mostrar();
         }
 
         private float CalcularCosto()
         {
             return base.Duracion * this.CostoLlamada;
+        }
+
+        public override bool Equals(object obj)
+        {
+            bool retorno = false;
+
+            if (obj is Local)
+                retorno = true;
+
+            return retorno;
         }
     }
 }

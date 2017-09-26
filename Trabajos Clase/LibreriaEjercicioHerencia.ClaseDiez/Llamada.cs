@@ -11,8 +11,6 @@ namespace LibreriaEjercicioHerencia.ClaseDiez
         protected float _duracion;
         protected string _nroDestino;
         protected string _nroOrigen;
-
-
        
 
         public float Duracion
@@ -40,7 +38,7 @@ namespace LibreriaEjercicioHerencia.ClaseDiez
             this._nroOrigen = origen;
         }
 
-        public string Mostrar()
+        protected virtual string Mostrar()
         {
             return "Duracion: " + this._duracion + "\nNumero Origen: " + this._nroOrigen + "\nNumero Destino: " + this._nroDestino;
         }
@@ -62,6 +60,23 @@ namespace LibreriaEjercicioHerencia.ClaseDiez
                 retorno = -1;
             }
             return retorno;
+        }
+
+        public static bool operator ==(Llamada unaLlamada,Llamada otraLlamada)
+        {
+            bool retorno = false;
+
+            if (String.Compare(unaLlamada.NroDestino, otraLlamada.NroDestino) == 0 && String.Compare(unaLlamada.NroOrigen, otraLlamada.NroOrigen) == 0  && unaLlamada.Equals(otraLlamada))
+            {
+                retorno = true;
+            }
+
+            return retorno;
+        }
+
+        public static bool operator !=(Llamada unaLlamada, Llamada otraLlamada)
+        {
+            return !(unaLlamada == otraLlamada);
         }
         
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibreriaEjercicioHerencia.ClaseDiez
 {
-    class Provincial : Llamada
+    public class Provincial : Llamada
     {
         protected Franja _franjaHoraria;
 
@@ -25,9 +25,16 @@ namespace LibreriaEjercicioHerencia.ClaseDiez
  
         }
 
-        public new string Mostrar()
+        protected override string Mostrar()
         {
-            return "Duracion: " + base.Duracion + "\nNumero Origen: " + base.NroOrigen + "\nNumero Destino: " + base.NroDestino + "\nFranja Horaria: " + this._franjaHoraria + "\nCosto Llamada: "+this.CostoLlamada;
+            return "Duracion: " + base.Duracion + " | Numero Origen: " + base.NroOrigen + " | Numero Destino: " + base.NroDestino + " | Franja Horaria: " + this._franjaHoraria + "\n | Costo Llamada: "+this.CostoLlamada;
+        }
+
+        
+
+        public override string ToString()
+        {
+            return this.Mostrar();
         }
 
         public float CalcularCosto()
@@ -37,15 +44,27 @@ namespace LibreriaEjercicioHerencia.ClaseDiez
             switch (this._franjaHoraria)
             {
                 case Franja.Franja_1:
-                    retorno = base.Duracion * (float)0.99;
-                        break;
+                        retorno = base.Duracion * (float)0.99;
+                         break;
+
                 case Franja.Franja_2:
                         retorno = base.Duracion * (float)1.25;
-                        break;
+                         break;
+
                 case Franja.Franja_3:
                         retorno = base.Duracion * (float)0.66;
-                        break;
+                         break;
             }
+
+            return retorno;
+        }
+
+        public override bool Equals(object obj)
+        {
+            bool retorno = false;
+
+            if (obj is Provincial)
+                retorno = true;
 
             return retorno;
         }
