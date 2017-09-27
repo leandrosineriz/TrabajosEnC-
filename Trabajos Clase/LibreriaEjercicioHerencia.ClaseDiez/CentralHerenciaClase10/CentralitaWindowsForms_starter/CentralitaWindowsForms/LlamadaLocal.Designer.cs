@@ -38,6 +38,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(191, 20);
             this.textBox3.TabIndex = 8;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // lblCosto
             // 
@@ -57,6 +58,9 @@
             this.Controls.Add(this.textBox3);
             this.Name = "LlamadaLocal";
             this.Text = "LlamadaLocal";
+            this.Controls.SetChildIndex(this.textBox1, 0);
+            this.Controls.SetChildIndex(this.textBox2, 0);
+            this.Controls.SetChildIndex(this.txtDuracion, 0);
             this.Controls.SetChildIndex(this.textBox3, 0);
             this.Controls.SetChildIndex(this.lblCosto, 0);
             this.ResumeLayout(false);

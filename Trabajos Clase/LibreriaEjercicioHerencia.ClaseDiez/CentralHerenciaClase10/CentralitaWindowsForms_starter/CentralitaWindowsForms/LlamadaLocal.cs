@@ -14,6 +14,8 @@ namespace CentralitaWindowsForms
     public partial class LlamadaLocal : Llamada
     {
         private Local _unaLocal;
+
+        public Local UnaLocal { get { return this._unaLocal; } }
  
 
         public LlamadaLocal()
@@ -26,6 +28,8 @@ namespace CentralitaWindowsForms
             float auxDuracion = float.Parse(this.txtDuracion.Text);
             string auxOrigen = this.textBox1.Text;
             string auxDestino = this.textBox2.Text;
+            float auxCosto = float.Parse(this.textBox3.Text);
+            this._unaLocal = new Local(auxOrigen, auxDuracion, auxDestino, auxCosto);
 
             base.btnAceptar_Click(sender, e);
         }
@@ -33,6 +37,11 @@ namespace CentralitaWindowsForms
         protected override void btnCancelar_Click(object sender, EventArgs e)
         {
             base.btnCancelar_Click(sender, e);
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

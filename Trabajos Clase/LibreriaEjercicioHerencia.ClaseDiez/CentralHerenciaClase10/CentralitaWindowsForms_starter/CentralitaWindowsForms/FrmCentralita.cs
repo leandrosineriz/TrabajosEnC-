@@ -47,7 +47,14 @@ namespace CentralitaWindowsForms
 
             if (frm.ShowDialog() == DialogResult.OK)
             {
- 
+                miCentralita += frm.UnaLocal;
+
+                this.lstVisor.Items.Clear();
+
+                foreach (LibreriaEjercicioHerencia.ClaseDiez.Llamada i in miCentralita.Llamadas)
+                {
+                    this.lstVisor.Items.Add(i.ToString());
+                }
             }
         }
     }

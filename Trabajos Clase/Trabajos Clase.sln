@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriaEjercicioHerencia.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentralitaWindowsForms", "LibreriaEjercicioHerencia.ClaseDiez\CentralHerenciaClase10\CentralitaWindowsForms_starter\CentralitaWindowsForms\CentralitaWindowsForms.csproj", "{9C127181-9D8C-4D0A-8A53-C66D8C0F8480}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModeloParcialUnoLibreria", "ModeloParcialUnoLibreria\ModeloParcialUnoLibreria.csproj", "{9F39B620-A444-4784-9E54-387A36D1ACA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModeloParcialUnoConsola", "ModeloParcialUnoConsola\ModeloParcialUnoConsola.csproj", "{CBB2F1A6-03D5-4475-A979-D7833DB7932F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +89,14 @@ Global
 		{9C127181-9D8C-4D0A-8A53-C66D8C0F8480}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C127181-9D8C-4D0A-8A53-C66D8C0F8480}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C127181-9D8C-4D0A-8A53-C66D8C0F8480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F39B620-A444-4784-9E54-387A36D1ACA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F39B620-A444-4784-9E54-387A36D1ACA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F39B620-A444-4784-9E54-387A36D1ACA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F39B620-A444-4784-9E54-387A36D1ACA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBB2F1A6-03D5-4475-A979-D7833DB7932F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBB2F1A6-03D5-4475-A979-D7833DB7932F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBB2F1A6-03D5-4475-A979-D7833DB7932F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBB2F1A6-03D5-4475-A979-D7833DB7932F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
