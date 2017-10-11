@@ -27,7 +27,7 @@ namespace Centralita.V3
 
         protected override string Mostrar()
         {
-            return base.Mostrar();
+            return base.Mostrar()+" | Costo: "+this._costo;
         }
 
         public override string ToString()

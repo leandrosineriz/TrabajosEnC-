@@ -11,9 +11,9 @@ using Centralita.V3;
 
 namespace FrmCentralita.V3
 {
-    public  partial class Llamada : Form
+    public partial class Llamada : Form
     {
-        public abstract Centralita.V3.Llamada Llamadas { get; set; }
+       public virtual Centralita.V3.Llamada Llamadas { get; set; }
 
         public Llamada()
         {

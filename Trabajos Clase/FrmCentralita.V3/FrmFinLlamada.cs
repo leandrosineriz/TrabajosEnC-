@@ -29,6 +29,15 @@ namespace FrmCentralita.V3
             InitializeComponent();
         }
 
+        protected override void btnAceptar_Click(object sender, EventArgs e)
+        {
+            base.btnAceptar_Click(sender, e);
+        }
+
+        protected override void btnCancelar_Click(object sender, EventArgs e)
+        {
+            base.btnCancelar_Click(sender, e);
+        }
 
     }
 }

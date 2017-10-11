@@ -39,6 +39,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Centralita.V3", "Centralita
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentralitaWindowsForms.V3", "FrmCentralita.V3\CentralitaWindowsForms.V3.csproj", "{7B82AD45-81C6-4E35-A9ED-44EA0267BEFD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaseTrece", "ClaseTrece\ClaseTrece.csproj", "{BFA22963-D046-4885-9FB8-0BFCA67109D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaseTrece.Consola", "ClaseTrece.Consola\ClaseTrece.Consola.csproj", "{250E0E1D-F862-44DA-A3F2-98F9498F29E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -121,6 +125,14 @@ Global
 		{7B82AD45-81C6-4E35-A9ED-44EA0267BEFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B82AD45-81C6-4E35-A9ED-44EA0267BEFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B82AD45-81C6-4E35-A9ED-44EA0267BEFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFA22963-D046-4885-9FB8-0BFCA67109D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFA22963-D046-4885-9FB8-0BFCA67109D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFA22963-D046-4885-9FB8-0BFCA67109D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFA22963-D046-4885-9FB8-0BFCA67109D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{250E0E1D-F862-44DA-A3F2-98F9498F29E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{250E0E1D-F862-44DA-A3F2-98F9498F29E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{250E0E1D-F862-44DA-A3F2-98F9498F29E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{250E0E1D-F862-44DA-A3F2-98F9498F29E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

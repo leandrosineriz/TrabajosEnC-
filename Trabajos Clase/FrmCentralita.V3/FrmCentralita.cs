@@ -80,7 +80,12 @@ namespace FrmCentralita.V3
 
         private void btnFinLlamada_Click(object sender, EventArgs e)
         {
+            FrmFinLlamada frm = new FrmFinLlamada();
 
+            if (frm.DialogResult == DialogResult.OK)
+            {
+ 
+            }
         }
             
         

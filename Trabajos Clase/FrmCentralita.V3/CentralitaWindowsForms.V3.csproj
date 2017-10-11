@@ -79,6 +79,9 @@
     <EmbeddedResource Include="FrmCentralita.resx">
       <DependentUpon>FrmCentralita.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmFinLlamada.resx">
+      <DependentUpon>FrmFinLlamada.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Llamada.resx">
       <DependentUpon>Llamada.cs</DependentUpon>
     </EmbeddedResource>
