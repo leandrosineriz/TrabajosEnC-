@@ -40,19 +40,23 @@ namespace Centralita.V3
         public float CalcularCosto()
         {
             float retorno=0;
-
+            DateTime auxTime = DateTime.Now;
+            TimeSpan horaInicial = new TimeSpan(base.FechaInicio.Hour, base.FechaInicio.Minute, base.FechaInicio.Second);
+            TimeSpan horaFinal = new TimeSpan(auxTime.Hour, auxTime.Minute, auxTime.Second);
+            horaFinal = horaFinal.Subtract(horaInicial);
+           
             switch (this._franjaHoraria)
             {
                 case Franja.Franja_1:
-                        retorno = base.Duracion * 0.99f;
+                        retorno = horaFinal.Seconds * 0.99f;
                          break;
 
                 case Franja.Franja_2:
-                        retorno = base.Duracion * (float)1.25;
+                         retorno = horaFinal.Seconds * (float)1.25;
                          break;
 
                 case Franja.Franja_3:
-                        retorno = base.Duracion * (float)0.66;
+                         retorno = horaFinal.Seconds * (float)0.66;
                          break;
             }
 

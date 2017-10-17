@@ -29,10 +29,10 @@ namespace FrmCentralita.V3
 
             if (frm.ShowDialog() == DialogResult.OK)
             {
-                miCentralita+=frm.Llamadas;
+                miCentralita += frm.Llamadas;
 
                 this.lstVisor.Items.Clear();
-                this.agregarElementosAlVisor();              
+                this.agregarElementosAlVisor();
             }
 
         }
@@ -55,7 +55,7 @@ namespace FrmCentralita.V3
         {
             switch (this.cboOrdenamiento.SelectedIndex)
             {
-                case 0:         
+                case 0:
                     this.miCentralita.Llamadas.Sort(Centralita.V3.Llamada.OrdenarPorCostoLlamada);
                     this.lstVisor.Items.Clear();
                     this.agregarElementosAlVisor();
@@ -68,26 +68,35 @@ namespace FrmCentralita.V3
                 default:
                     break;
             }
-         }
-            
+        }
+
         private void agregarElementosAlVisor()
         {
-                foreach (Centralita.V3.Llamada i in this.miCentralita.Llamadas)
-                    {
-                        this.lstVisor.Items.Add(i);
-                    }
+            foreach (Centralita.V3.Llamada i in this.miCentralita.Llamadas)
+            {
+                this.lstVisor.Items.Add(i);
+            }
         }
 
         private void btnFinLlamada_Click(object sender, EventArgs e)
         {
-            FrmFinLlamada frm = new FrmFinLlamada();
-
-            if (frm.DialogResult == DialogResult.OK)
+            if (this.lstVisor.SelectedIndex != -1)
             {
- 
+                Centralita.V3.Llamada unaLlamada = this.miCentralita.Llamadas[this.lstVisor.SelectedIndex];
+                FrmFinLlamada frm = new FrmFinLlamada(unaLlamada);
+
+                if (frm.ShowDialog() == DialogResult.OK)
+                {
+                    this.miCentralita.Llamadas.RemoveAt(this.lstVisor.SelectedIndex);
+                    lstVisor.Items.Clear();
+                    this.agregarElementosAlVisor();
+
+
+                }
             }
+
         }
-            
-        
+
+
     }
 }

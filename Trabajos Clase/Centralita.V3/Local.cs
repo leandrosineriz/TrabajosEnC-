@@ -37,7 +37,12 @@ namespace Centralita.V3
 
         private float CalcularCosto()
         {
-            return base.Duracion * this._costo;
+            DateTime auxTime = DateTime.Now;
+            TimeSpan horaInicial = new TimeSpan(base.FechaInicio.Hour, base.FechaInicio.Minute, base.FechaInicio.Second);
+            TimeSpan horaFinal = new TimeSpan(auxTime.Hour, auxTime.Minute, auxTime.Second);
+            horaFinal = horaFinal.Subtract(horaInicial);
+
+            return horaFinal.Seconds * this._costo;
         }
 
         public override bool Equals(object obj)

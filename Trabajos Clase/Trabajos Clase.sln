@@ -43,6 +43,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaseTrece", "ClaseTrece\Cl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaseTrece.Consola", "ClaseTrece.Consola\ClaseTrece.Consola.csproj", "{250E0E1D-F862-44DA-A3F2-98F9498F29E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaseQuince.Deposito", "ClaseQuince.Deposito\ClaseQuince.Deposito.csproj", "{5E910094-295E-403F-93AD-35CFFB14ECA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaseQuince.Deposito.Consola", "ClaseQuince.Deposito.Consola\ClaseQuince.Deposito.Consola.csproj", "{3719A114-4005-42A5-B59E-8869A21DC43F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -133,6 +137,14 @@ Global
 		{250E0E1D-F862-44DA-A3F2-98F9498F29E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{250E0E1D-F862-44DA-A3F2-98F9498F29E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{250E0E1D-F862-44DA-A3F2-98F9498F29E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E910094-295E-403F-93AD-35CFFB14ECA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E910094-295E-403F-93AD-35CFFB14ECA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E910094-295E-403F-93AD-35CFFB14ECA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E910094-295E-403F-93AD-35CFFB14ECA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3719A114-4005-42A5-B59E-8869A21DC43F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3719A114-4005-42A5-B59E-8869A21DC43F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3719A114-4005-42A5-B59E-8869A21DC43F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3719A114-4005-42A5-B59E-8869A21DC43F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
