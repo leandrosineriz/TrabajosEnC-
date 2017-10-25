@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5E910094-295E-403F-93AD-35CFFB14ECA7}</ProjectGuid>
+    <ProjectGuid>{D9C2E38D-7119-4118-9C7D-BC349AE46502}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ClaseQuince.Deposito</RootNamespace>
-    <AssemblyName>ClaseQuince.Deposito</AssemblyName>
+    <RootNamespace>ClaseDieciSeis</RootNamespace>
+    <AssemblyName>ClaseDieciSeis</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,12 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Auto.cs" />
-    <Compile Include="Cocina.cs" />
-    <Compile Include="DepositoLlenoExeption.cs" />
-    <Compile Include="Depositos.cs" />
-    <Compile Include="DepositoDeAutos.cs" />
-    <Compile Include="DepositoDeCocinas.cs" />
+    <Compile Include="Vehiculo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
