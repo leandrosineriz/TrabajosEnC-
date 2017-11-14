@@ -16,18 +16,13 @@ namespace ClaseVeinte.WForms
         private Persona _persona;
         DataRow _fila;
 
-        public Persona Persona { get { return this._persona; } }
-        public DataRow Fila { get { return this._fila; } }
+        public Persona Persona { get { return this._persona; } }      
 
         public frmABM()
         {
             InitializeComponent();
         }
-        /*
-        public frmABM(DataTable dt)
-        {
-            this._fila = dt.NewRow();
-        }*/
+        
         public frmABM(Persona persona)
             : this()
         {          

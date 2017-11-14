@@ -53,9 +53,12 @@ namespace ClaseVeinte.WForms
             if (frm.ShowDialog() == DialogResult.OK)
             {
                 //this.lsboxPersonas.Items.Clear();
-                proveedor.AgregarPersonaBD(frm.Fila);
-               
-                
+                DataRow f = this.listaPersonaDT.NewRow();
+                f["Id"] = frm.Persona.id;
+                f["Nombre"] = frm.Persona.nombre;
+                f["Apellido"] = frm.Persona.apellido;
+                f["Edad"] = frm.Persona.edad;
+                this.listaPersonaDT.Rows.Add(f);
                /* foreach (Persona i in listaPersona)
                 {
                     lsboxPersonas.Items.Add(i);
